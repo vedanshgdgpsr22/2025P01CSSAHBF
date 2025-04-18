@@ -1,0 +1,286 @@
+
+body {
+  background-image: linear-gradient(#fcba03,#df03fc); 
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    
+  }
+  @keyframes bgcolor{
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: #f29811;}
+    75% {background-color: blue;}
+    100% {background-color: blueviolet;}
+   
+
+}
+  
+  .cake {
+    position: absolute;
+    width: 24.5%;
+    height: 21%;
+    bottom: 2.5%;
+    left: 37.75%;
+    animation-name: slideupcake;
+    animation-duration:3s;
+   
+  }
+  @keyframes slideupcake{
+    50%{display: none;}
+ from{transform: translateY(300%);}
+  }
+  .bcakeage{
+    font-size: 500%;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   left: 18%;
+   top: 20%;
+    z-index: 15;
+  }
+  .plate {
+    width: 105%;
+    height: 59%;
+    position: absolute;
+    bottom: -3.3%;
+    left: -2.8%;
+    background-color: #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 0 #b3b3b3, 0 4px 0 #b3b3b3, 0 5px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cake > * {
+    position: absolute;
+  }
+  
+  .layer {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 66.66%;
+    border-radius: 50%;
+    background-color: #553c13;
+    box-shadow: 0 2px 0px #6a4b18, 0 4px 0px #33240b, 0 6px 0px #32230b, 0 8px 0px #31230b, 0 10px 0px #30220b, 0 12px 0px #2f220b, 0 14px 0px #2f210a, 0 16px 0px #2e200a, 0 18px 0px #2d200a, 0 20px 0px #2c1f0a, 0 22px 0px #2b1f0a, 0 24px 0px #2a1e09, 0 26px 0px #2a1d09, 0 28px 0px #291d09, 0 30px 0px #281c09;
+    
+  }
+  
+  .layer-top {
+    top: -37%;
+  }
+  
+  .layer-middle {
+    top: -13%;
+  }
+  
+  .layer-bottom {
+    top: 10%;
+  }
+  
+  .icing {
+    top: -37%;
+    left:1.4% ;
+    background-color: #f0e4d0;
+    width: 97%;
+    height: 63%;
+    border-radius: 50%;
+  }
+  .icing:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 1.4%;
+    bottom: 6px;
+    left: 5px;
+    background-color: #f2e2c7;
+    box-shadow: 0 0 4px #f6efe3, 0 0 4px #f6efe3, 0 0 4px #f6efe3;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .drip {
+    display: block;
+    width: 42%;
+    height: 53%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+    background-color: #f0e4d0;
+  }
+
+  .drip1 {
+    top: 7%;
+    left: 5px;
+    transform: skewY(30deg);
+    height: 36%;
+    width: 20%;
+    border-bottom-left-radius:10px ;
+
+  }
+  
+  .drip2 {
+    top: 9%;
+    right: 1.7%;
+    transform: skewY(-15deg);
+    border-bottom-right-radius:25% ;
+    border-bottom-left-radius: 25%;
+  }
+  
+  .drip3 {
+    top: 9%;
+    left: 25%;
+    width: 26.66%;
+    height: 60%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  
+  .candle {
+    background-color: #7B020B;
+    width: 5%;
+    height: 60%;
+    border-radius: 8px/4px;
+    top: -60%;
+    left: 50%;
+    margin-left: -8px;
+    z-index: 10;
+  }
+  .candle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: #ad030f;
+  }
+
+  
+  .flame {
+    position: absolute;
+    background-color: orange;
+    visibility: hidden;
+    width: 15px;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px/25px 25px 10px 10px;
+    top: -34px;
+    left: 50%;
+    margin-left: -7.5px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
+    transform-origin: 50% 90%;
+    animation: flicker 1s ease-in-out alternate 33 ; 
+  }
+  
+  @keyframes flicker {
+    0% {
+      visibility: visible;
+      transform: skewX(5deg);
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);
+    }
+    25% {
+      visibility: visible;
+      transform: skewX(-5deg);
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
+    }
+    50% {
+      visibility: visible;
+      transform: skewX(10deg);
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);
+    }
+    75% {
+      visibility: visible;
+      transform: skewX(-10deg);
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);
+    }
+    100% {
+      visibility: visible;
+      transform: skewX(5deg);
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
+    }
+    
+    
+  }
+  .wick{
+    background-color: black;
+    height: 20px;
+    width: 2px;
+    position:absolute;
+    left:8;
+    top:-15;
+  }
+  #mwhbvm{
+position: absolute;
+    bottom: 0;
+    background-color: #f5faf5;
+    height: 25px;
+    border-radius: 5px;
+    width: 220px;
+   align-content:space-evenly;
+   vertical-align: middle;
+   text-align: center;
+  }
+  #hbn{
+    font-size: 600%;
+    animation-name:hbn;
+    animation-duration: 1s;
+    font-family: "Jersey 20", sans-serif;
+    font-style: normal;
+    text-align: center;
+  }
+  @keyframes hbn{
+    0%{transform: scale(0,0);}
+  }
+  
+  #garland1{
+    width:25%;
+    top:-10%;
+    transform: skewY(0deg);
+    position: absolute;
+    top:1%;
+    right:0%;
+    animation-name: gsda;
+    animation-duration: 2s;
+    z-index: 9;
+  }
+  #garland2{
+    width:25%;
+    top:-10%;
+    transform: skewY(-3deg);
+    position: absolute;
+    top:1%;
+    right: 25%;
+    animation-name: gsda;
+    animation-duration: 2s;
+    z-index: 9;
+  }
+  #garland3{
+    width:25%;
+    top:-10%;
+    transform: skewY(0deg);
+    position: absolute;
+    top:1%;
+    right:50%;
+    animation-name: gsd;
+    animation-duration: 2s;
+    z-index: 9;
+  }
+  #garland4{
+    width:25%;
+    top:-10%;
+    transform: skewY(-3deg);
+    position: absolute;
+    top:1%;
+    right:75%;
+    animation-name: gsd;
+    animation-duration: 2s;
+    z-index: 9;
+  }
+  @keyframes gsd{
+    from{transform: translatex(-300%);}
+  }
+  @keyframes gsda{
+    from{transform: translatex(300%);}
+  }

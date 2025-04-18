@@ -1,0 +1,101 @@
+.img1{
+    background: url(Image1.JPG);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: calc(175/width*311);
+    overflow: hidden;
+    border-radius: 13px;
+    position: absolute;
+    top:20%;
+    left:10%;
+    animation-name: img1slideright;
+    animation-duration: 2s;
+}
+.img1a{
+    width: 85.72%;
+    height: calc(175/width*311);
+    background: linear-gradient();
+    border-radius: 13px;
+    backdrop-filter: blur(15px);
+    position: static;
+    z-index: 0;
+    margin-left:8%;
+    margin-right: 8%;
+    margin-top: 5.875%;
+    margin-bottom: 5.875%;
+}
+.img1b{
+    backdrop-filter: blur(15px);
+}
+@keyframes img1slideright{
+    from{transform: translateX(-100%);}
+}
+.img2{
+    background: url(Image2.JPG);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: calc(175/width*311);
+    overflow: hidden;
+    border-radius: 13px;
+    position: absolute;
+    right: 10%;
+    top:20%;
+    animation-name: img2slideleft;
+    animation-duration: 3s;
+}
+.img2a{
+    width: 85.72%;
+    height: calc(175/width*311);
+    background: linear-gradient();
+    border-radius: 13px;
+    backdrop-filter: blur(15px);
+    position: static;
+    z-index: 0;
+    margin-left:8%;
+    margin-right: 8%;
+    margin-top: 5.875%;
+    margin-bottom: 5.875%;
+}
+.img2b{
+    backdrop-filter: blur(15px);
+}
+@keyframes img2slideleft{
+    from{transform: translateX(300%) scale(0,0);}
+}
+.img3{
+    background: url(Image3.JPG);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: calc(width);
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    right: 40%;
+    top:32%;
+    transform: rotatez(-20deg);
+    animation-name: img3scalerotate;
+    animation-duration: 4s;
+}
+.img3a{
+    width: 85.72%;
+    height: calc(width);
+    background: linear-gradient();
+    border-radius: 13px;
+    backdrop-filter: blur(15px);
+    position: static;
+    z-index: 0;
+    margin-left:8%;
+    margin-right: 8%;
+    margin-top: 5.875%;
+    margin-bottom: 5.875%;
+    border-radius: 50%;
+}
+.img3b{
+    backdrop-filter: blur(15px);
+}
+@keyframes img3scalerotate {
+    0%{transform: rotateZ(-100deg) scale(0,0);}
+}
