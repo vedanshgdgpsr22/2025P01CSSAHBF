@@ -1,5 +1,5 @@
 .img1{
-    background: url(Image1.JPG);
+    background: url(Image1.jpg);
     background-size:contain;
     background-repeat: no-repeat;
     width: 25%;
@@ -32,7 +32,7 @@
     from{transform: translateX(-100%);}
 }
 .img2{
-    background: url(Image2.JPG);
+    background: url(Image2.jpg);
     background-size:contain;
     background-repeat: no-repeat;
     width: 25%;
@@ -65,7 +65,7 @@
     from{transform: translateX(300%) scale(0,0);}
 }
 .img3{
-    background: url(Image3.JPG);
+    background: url(Image3.jpg);
     background-size:contain;
     background-repeat: no-repeat;
     width: 20%;
