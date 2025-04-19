@@ -8,7 +8,7 @@ document.getElementById("title").innerHTML = "Happy Birthday! " + name + " Hope 
 let d= new Date("2025-10-10")
 if(bday.getMonth()== d.getMonth()){
     if(bday.getDate()== d.getDate()) {
-      window.alert("It is your birthday")
+      //window.alert("It is your birthday")
       const age= d.getFullYear()-bday.getFullYear()
       document.getElementById("bcakeage").innerHTML= age+"th"
     }
