@@ -10,7 +10,9 @@
     top:20%;
     left:10%;
     animation-name: img1slideright;
-    animation-duration: 2s;
+    animation-duration: 15s;
+    transform-origin: 0% 100%;
+    transform: rotateZ(-30deg);
 }
 .img1a{
     width: 85.72%;
@@ -29,7 +31,11 @@
     backdrop-filter: blur(15px);
 }
 @keyframes img1slideright{
-    from{transform: translateX(-100%);}
+    0%{transform: rotateZ(0deg);}
+   from{transform: translateX(-100%)}
+   13%{transform: rotateZ(0deg);}
+   40%{transform: rotateZ(0deg);}
+   60%{transform: rotateZ(-30deg);}
 }
 .img2{
     background: url(Image2.jpg);
@@ -42,8 +48,10 @@
     position: absolute;
     right: 10%;
     top:20%;
-    animation-name: img2slideleft;
-    animation-duration: 3s;
+    animation-name: img2slidelefttilt;
+    animation-duration: 6s;
+    transform: rotateZ(30deg);
+    transform-origin: 100% 100%;
 }
 .img2a{
     width: 85.72%;
@@ -61,7 +69,8 @@
 .img2b{
     backdrop-filter: blur(15px);
 }
-@keyframes img2slideleft{
+@keyframes img2slidelefttilt{
+    50%{transform: translateX(300%) rotateZ(0deg);}
     from{transform: translateX(300%) scale(0,0);}
 }
 .img3{
@@ -98,4 +107,75 @@
 }
 @keyframes img3scalerotate {
     0%{transform: rotateZ(-100deg) scale(0,0);}
+}
+.img4{
+    background: url(Image4.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: calc(175/width*311);
+    overflow: hidden;
+    border-radius: 13px;
+    position: absolute;
+    top:20%;
+    left:10%;
+    animation-name: img4delayedslideup;
+    animation-duration: 15s;
+
+}
+.img4a{
+    width: 85.72%;
+    height: calc(175/width*311);
+    background: linear-gradient();
+    border-radius: 13px;
+    backdrop-filter: blur(15px);
+    position: static;
+    z-index: 0;
+    margin-left:8%;
+    margin-right: 8%;
+    margin-top: 5.875%;
+    margin-bottom: 5.875%;
+}
+.img4b{
+    backdrop-filter: blur(15px);
+}
+@keyframes img4delayedslideup{
+        0%{transform: translateY(-200%);}
+        50%{transform: none;}
+        from{transform: translateY(200%);}
+        53%{transform: perspective(0%);}
+
+}
+.img5{
+    background: url(Image5.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: calc(175/width*311);
+    overflow: hidden;
+    border-radius: 13px;
+    position: absolute;
+    right: 10%;
+    top:20%;
+    animation-name: img2slideleft;
+    animation-duration: 6s;
+}
+.img5a{
+    width: 85.72%;
+    height: calc(175/width*311);
+    background: linear-gradient();
+    border-radius: 13px;
+    backdrop-filter: blur(15px);
+    position: static;
+    z-index: 0;
+    margin-left:8%;
+    margin-right: 8%;
+    margin-top: 5.875%;
+    margin-bottom: 5.875%;
+}
+.img5b{
+    backdrop-filter: blur(15px);
+}
+@keyframes img2slideleft{
+    from{transform: translateX(300%) scale(0,0);}
 }
