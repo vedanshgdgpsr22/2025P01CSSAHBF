@@ -4,6 +4,9 @@ body {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+  width:100%;
+  height:100%;
+  
 
     
   }
